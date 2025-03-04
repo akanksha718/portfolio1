@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://tse2.mm.bing.net/th?id=OIP.49AMbeQQjiGXT_OBf94CKQHaEK&pid=Api&P=0&h=180" type="image/png">
+    <title>Akanksha's Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            background-color: black;
+        }
+        h1 {
+            font-style: italic;
+            text-align: center;
+            color: yellow;
+            margin-top: 22px;
+            margin: 20px;
+        }
+        #intro {
+            color: white;
+            font-size: 15px;
+            margin: 15px;
+        }
+        header div nav ul {
+            list-style-type: none;
+        }
+        header div nav ul li {
+            width: 100px;
+            background-color: lightblue;
+        }
+        header div nav ul li a {
+            background-color: lightblue;
+        }
+        header div nav ul li button {
+            background-color: lightblue;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            background-color: lightblue;
+            height: 40px;
+        }
+        main {
+            text-align: center;
+        }
+        /* Flex container to position image and video side by side */
+        #media-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        #media-container img {
+            width: 200px;
+            height: 250px;
+            box-shadow: 3px 3px 4px white;
+        }
+        #video-container {
+            display: none;
+            width: 640px;
+            height: 360px;
+        }
+        #video-container video {
+            width: 100%;
+            height: auto;
+        }
+        #education, #skill, #links {
+            padding: 2px;
+            margin: 2px;
+        }
+        h2 {
+            color: yellow;
+        }
+        ul li {
+            list-style: none;
+            margin: 10px;
+            color: white;
+        }
+        footer p {
+            margin: 3px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Portfolio</h1>
+    <p id="intro">Hi...My name Akanksha Negi, A Dedicated Computer Science Student and a tech enthusiast, turning ideas into innovative solutions, through coding and creativity.</p>
+    <header>
+        <div>
+            <nav id="list">
+                <ul>
+                    <li><a href="learning.html" target="_blank">Learnings</a></li>
+                    <li><a href="tel:+917906628223">WhatsApp no</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><button onclick="showVideo()">Introduction Video</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Flex container for image and video -->
+        <div id="media-container">
+            <img src="my_img.jpg" alt="Me">
+            <div id="video-container">
+                <video controls>
+                    <source src="intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <hr>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>(10th) Florence Nightingale Public School - 80%</li>
+                <li>(12th) Sant Kabir Academy - 70%</li>
+                <li>Bachelor of Technology in Information, Graphic Era Hill University (2023-2027)</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="skill">
+            <h2>Skills</h2>
+            <ul>
+                <li>C (Programming language)</li>
+                <li>Python (Programming language)</li>
+                <li>CPP (Programming language)</li>
+                <li>OOP (Object Oriented Programming)</li>
+                <li>Data Structure</li>
+                <li>HTML</li>
+                <li>CSS (Cascading Style Sheets)</li>
+                <li>SQL</li>
+                <li>DBMS</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="links">
+            <h2>Social Links</h2>
+            <ul>
+                <li><a href="https://codolio.com/profile/akanksha_negi" target="_blank">My Codolio Profile</a></li>
+                <li><a href="https://leetcode.com/u/akanksha_negi/" target="_blank">My LeetCode Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/akanksha-negi-51555a2b6/">My LinkedIn Profile</a></li>
+                <li><a href="mailto:ankiakanksha707@gmail.com">Mail</a></li>
+            </ul>
+        </section>
+        <hr>
+        <footer>
+            <p>&copy; Copyright reserved</p>
+        </footer>
+    </main>
+
+    <script>
+        // Function to show video beside the image when button is clicked
+        function showVideo() {
+            document.getElementById('video-container').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
