@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.904);
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+#heading {
+    font-style: italic;
+    text-align: center;
+    color: rgb(212, 194, 55);
+    margin: 1rem;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+
+.animated-text {
+    margin: 2rem;
+}
+
+#introduction {
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+#list {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 3rem;
+    align-items: center;
+    background-color: cadetblue;
+
+    a {
+        text-decoration: none;
+        color: white;
+        transform: color 0.1s;
+    }
+    a:hover{
+        color: #2563eb;
+    }
+
+}
+
+#media-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(169, 169, 169, 0.352);
+    width: 85%;
+    overflow-x: hidden;
+    gap: 1rem;
+}
+
+.image-sec {
+    img {
+        width: 20rem;
+        height: 20rem;
+        box-shadow: 0.5rem 0.5rem 0.5rem white;
+    }
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    video {
+        width: 26rem;
+        height: 24rem;
+    }
+}
+
+@media (max-width:975px) {
+    #introduction {
+        animation: none;
+        border-right: none;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 768px) {
+    #heading {
+        font-size: 1.5rem;
+        padding: 1rem;
+        overflow-x: hidden;
+    }
+
+    .animated-text {
+        margin: 1rem;
+        font-size: 1rem;
+        overflow-x: hidden;
+    }
+
+    #list {
+        flex-direction: column;
+        height: auto;
+        gap: 0.5rem;
+        overflow-x: hidden;
+        padding: 1rem 0;
+    }
+
+    #media-container {
+        padding: 1rem;
+        width: 95%;
+        overflow-x: hidden;
+    }
+
+    .image-sec img {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .video-container video {
+        width: 85%;
+        height: auto;
+    }
+}
+.subh{
+    color: coral;
+    margin: 1rem;
+    line-height: 1.5rem;
+    font-size: 2rem;
+}
+#About, #skill, #Contact,#Projects{
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+}
+.link-class{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 2rem;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    img{
+        width: 1.5rem;
+        transition: transform 0.3s ease;
+    };
+    img:hover {
+        transform: translateY(-0.6rem);
+    }
+}
+
+footer{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    color: #fff;
+}
+#Projects{
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+}
